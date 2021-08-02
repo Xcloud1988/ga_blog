@@ -34,11 +34,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
-defaults: 
- scope:
-  path: "assets/img"
- values:
-  image: true
+
 
 
 # Exclude from processing.
