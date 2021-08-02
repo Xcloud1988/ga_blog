@@ -1,0 +1,19 @@
+---
+layout: "wrapper"
+author: "言小午"
+---
+
+{% if page.title == "言小午的世界!" %}
+ this is the first post
+{% endif %}
+
+{% for post in site.posts %}
+<li><a style="{% if page.url ==post.url %}color:red;{%endif%}" href="{{post.url}}">{{post.title}}</a></li>
+
+{% endfor %}
+
+	<h1>{{ page.title }}<h1>
+	<h3>{{ page.author }}
+	<hr>
+	
+	{{content}}
